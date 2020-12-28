@@ -1,0 +1,16 @@
+<mat-toolbar style="background:#213C37; color: white">
+  <mat-toolbar-row>
+    <span class="header-title" [routerLink]="['']">Heatzy Angular <small>(Beta)</small></span>
+    <span style="flex: 1 1 auto;"></span>
+    <button *ngIf="isLogged()" mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logOut()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Log Out</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+

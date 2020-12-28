@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseURL: 'https://euapi.gizwits.com/app',
+  appId: 'c70a66ff039d41b4a220e198b0fcc8b3'
 };
 
 /*
